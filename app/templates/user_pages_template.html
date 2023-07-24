@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+<section class="bg-dark">
+    <div>
+        <img src="../static/Images/whiskey-pour-md.jpg" class="bg-image" style="position: relative; width: 100%; min-width: 100vh" alt="Two scotch glasses, with scotch being poured into one">  
+        <div class="profile-text-background bg-dark text-light bg-opacity-50 w-100 p-5 my-5" style="position: absolute; top: 30%; align-items: center">
+            {% block user_function %}
+            {% endblock %}
+    </div>
+</section>
+{% endblock %}

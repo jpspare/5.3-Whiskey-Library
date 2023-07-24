@@ -1,0 +1,15 @@
+{% extends 'user_pages_template.html' %}
+
+{% block user_function %} 
+  
+<h1 class="profile-text text-center">{{ current_user.email}}'s User Profile</h1>
+<div class="container text-center"><br>
+    <div class="d-flex column align-items-center justify-content-center">
+        <h3 class="p-5">Here are your profile details:</h3>
+        <ul class="list-group">
+            <li class="list-group-item bg-transparent text-light">Email: {{ current_user.email }}</li>
+            <li class="list-group-item bg-transparent text-light">Token: {{ current_user.token }} </li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
